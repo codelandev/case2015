@@ -1,0 +1,38 @@
+.btn {
+  border: 2px solid transparent;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: inline-block;
+  line-height: 1.6;
+  cursor: pointer;
+  transition: all .3s ease;
+  color: #fff;
+}
+
+.btn-line-white {
+  border-color: #fff;
+
+  &:hover {
+    background: #fff;
+    color: #0c2849;
+  }
+}
+
+.btn-line-blue {
+  border-color: $brand-blue-light;
+  color: $brand-blue-light;
+
+  &:hover {
+    background: $brand-blue-light;
+    color: #fff;
+  }
+}
+
+.btn-subscribe {
+  margin-top: 30px;
+}
+
+.btn-more {
+  margin-top: 20px;
+}

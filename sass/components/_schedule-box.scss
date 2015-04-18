@@ -1,0 +1,65 @@
+.schedule-box {
+  background: $brand-gray-light;
+  list-style: none;
+  margin: 0;
+}
+
+.schedule-header,
+.schedule-break {
+  background: $brand-gray-medium;
+}
+
+.schedule-item {
+  padding: 20px 0 20px 68px;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.schedule-info {
+  float: left;
+}
+
+.schedule-header {
+  padding: 50px 0 10px 68px;
+  position: relative;
+
+  .title {
+    text-transform: uppercase;
+  }
+}
+
+.schedule-title {
+  font-size: 16px;
+  margin: 0; // bootstrap
+  color: $brand-blue-light;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.schedule-hours {
+  font-size: 16px;
+  color: $brand-gray-high;
+  font-weight: bold;
+  float: left;
+  width: 60px;
+  text-align: center;
+}
+
+.schedule-speaker {
+  color: $brand-black-light;
+}
+
+.schedule-place {
+  color: #999;;
+
+  &:before {
+    content: "| ";
+  }
+}
+
+
+.schedule-break {
+  .title {
+    margin-bottom: 0;
+    text-transform: uppercase;
+  }
+}

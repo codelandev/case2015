@@ -1,0 +1,52 @@
+.speaker {
+  background: $brand-black-light;
+  padding: 80px 0;
+}
+
+.speakers {
+  list-style: none;
+  margin: 0;
+}
+
+.speakers-item {
+  display: inline-block;
+  width: 25%;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  margin: 80px 0 20px -4px;
+  // margin-left: -4px; removes inline-block default margin
+
+  h2 {
+    font-size: 16px;
+    font-weight: bold;
+    width: 100px;
+    margin: 10px auto;
+  }
+
+  span {
+    font-size: 13px;
+    font-weight: 300;
+  }
+}
+
+.speakers-photo {
+  width: 120px;
+  height: 120px;
+  transform: rotate(45deg);
+  overflow: hidden;
+  background: orange;
+  margin: 0 auto;
+
+  .photo {
+    background-size: cover;
+    width: 170px;
+    height: 170px;
+    margin: -25px;
+    transform: rotate(-45deg);
+  }
+}
+
+.speakers-description {
+  margin-top: 40px;
+}

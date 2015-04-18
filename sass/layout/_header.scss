@@ -1,0 +1,21 @@
+.header {
+  padding: 50px 0;
+}
+
+.nav {
+  float: right;
+  width: 30px;
+}
+
+.menu {
+  cursor: pointer;
+  display: block;
+
+  span {
+    display: block;
+    height: 5px;
+    width: 100%;
+    background: #fff;
+    margin-top: 5px;
+  }
+}
