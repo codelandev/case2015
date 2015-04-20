@@ -1,0 +1,14 @@
+pt-BR:
+  activerecord:
+    models:
+      event:
+        one: Evento
+        other: Eventos
+    attributes:
+      event:
+        title: Título
+        happens_at: Acontece em
+        place: Local
+        speaker: Palestrante
+        created_at: Criado em
+        updated_at: Atualizado em
