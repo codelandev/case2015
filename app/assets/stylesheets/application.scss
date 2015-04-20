@@ -1,3 +1,6 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
 @import 'base/variables';
 @import 'base/sanitize';
 @import 'base/typography';
@@ -19,6 +22,12 @@
 @import 'components/buttons';
 @import 'components/date';
 @import 'components/schedule-box';
+@import "components/flash";
+
+$nprogress-color:  $brand-blue-light;
+
+@import "nprogress";
+@import "nprogress-bootstrap";
 
 @import 'layout/header';
 @import 'layout/section';
