@@ -16,6 +16,27 @@
     height: 5px;
     width: 100%;
     background: #fff;
-    margin-top: 5px;
+    margin-top: 6px;
+    transition: all 1s;
+    position: relative;
+  }
+}
+
+.menu.menu-close {
+
+  span:first-child {
+    transform-origin: left center;
+    transform: rotate(45deg);
+  }
+
+  span:nth-child(2) {
+    transform-origin: left center;
+    background: transparent;
+    width: 0%;
+  }
+
+  span:last-child {
+    transform-origin: left center;
+    transform: rotate(-45deg);
   }
 }
