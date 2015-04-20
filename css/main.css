@@ -153,6 +153,14 @@ html, body {
 body {
   background: #f2f2f2; }
 
+.site-wrapper {
+  transition: all 0.3s cubic-bezier(0.94, 0.06, 0.32, 0.95) 0s;
+  z-index: 2000;
+  position: relative; }
+
+.open {
+  transform: translate(-200px, 0); }
+
 .v-container {
   display: table;
   width: 100%;
@@ -455,12 +463,51 @@ body {
     height: 5px;
     width: 100%;
     background: #fff;
-    margin-top: 5px; }
+    margin-top: 6px;
+    transition: all 1s;
+    position: relative; }
+
+.menu.menu-close span:first-child {
+  transform-origin: left center;
+  transform: rotate(45deg); }
+.menu.menu-close span:nth-child(2) {
+  transform-origin: left center;
+  background: transparent;
+  width: 0%; }
+.menu.menu-close span:last-child {
+  transform-origin: left center;
+  transform: rotate(-45deg); }
 
 .section-title {
   text-align: center;
   margin: 0;
   font-weight: bold;
   margin-bottom: 40px; }
+
+.side-nav {
+  position: fixed;
+  background: #222;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 1000;
+  width: 200px;
+  color: #fff;
+  transition: all 1s;
+  box-shadow: inset 2px 0 3px rgba(0, 0, 0, 0.8);
+  padding: 15px 0; }
+  .side-nav li {
+    text-transform: capitalize; }
+  .side-nav a {
+    padding: 15px 15px;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    transition: all .2s;
+    color: #fff; }
+    .side-nav a:hover {
+      background: #333;
+      color: #fff;
+      text-decoration: none; }
 
 /*# sourceMappingURL=main.css.map */
