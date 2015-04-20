@@ -1,0 +1,21 @@
+development:
+  adapter: postgresql
+  database: axis_website_development
+  username: postgres
+  password: postgres
+  host: localhost
+  poor: 5
+
+test:
+  adapter: postgresql
+  database: axis_website_test
+  username: postgres
+  password: postgres
+  host: localhost
+  poor: 5
+
+production:
+  adapter: postgresql
+  database: axis_website_production
+  host: localhost
+  poor: 5
