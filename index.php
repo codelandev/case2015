@@ -417,8 +417,31 @@
     <h1 class="text-white u-uppercase section-title">
       O local
     </h1>
-    <div class="place-map text-center">
-      <img src="http://placehold.it/500x235" alt="">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-centered">
+          <div class="place-map text-center">
+            <img src="http://placehold.it/600x235" alt="">
+          </div>
+          <div class="place-map-description">
+            <h2>Fecomercio</h2>
+            <p>Rua doutor plinio barreto, 285 - Bela vista. São Paulo SP</p>
+          </div>
+          <div class="row">
+            <div class="hotels">
+              <h3 class="text-white u-uppercase section-title">
+                Hotéis mais próximos por nome startup
+              </h3>
+              <div class="col-md-4"><img src="http://placehold.it/150x80" alt=""></div>
+              <div class="col-md-4"><img src="http://placehold.it/150x80" alt=""></div>
+              <div class="col-md-4"><img src="http://placehold.it/150x80" alt=""></div>
+            </div>
+          </div>
+          <div class="place-action">
+            <a href="" class="btn">Saiba mais</a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
