@@ -1,0 +1,14 @@
+pt-BR:
+  activerecord:
+    models:
+      speaker:
+        one: Paletrante
+        other: Paletrantes
+    attributes:
+      speaker:
+        name: Nome
+        company: Empresa
+        website: Website
+        avatar: Avatar
+        created_at: Criado em
+        updated_at: Atualizado em
