@@ -1,0 +1,18 @@
+pt-BR:
+  activerecord:
+    models:
+      sponsor:
+        one: Patrocinador
+        other: Patrocinadores
+      partner:
+        one: Parceiro
+        other: Parceiros
+      supporter:
+        one: Apoiador
+        other: Apoiadores
+    attributes:
+      backer:
+        logo: Logo
+        website: Website
+        created_at: Criado em
+        updated_at: Atualizado em
