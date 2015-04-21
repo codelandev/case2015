@@ -9,13 +9,10 @@
 }
 
 .speakers-item {
-  display: inline-block;
-  width: 25%;
   color: #fff;
   font-size: 12px;
   text-align: center;
-  margin: 80px 0 20px -4px;
-  // margin-left: -4px; removes inline-block default margin
+  padding-top: 30px;
 
   h2 {
     font-size: 16px;
