@@ -1,0 +1,22 @@
+- if @exhibitors.any?
+  section.showcase
+    h1.text-blue.u-uppercase.section-title
+      |  Expositores do evento
+    .container
+      .row
+        .col-md-10.col-centered
+          .showcases
+            .row
+              - @exhibitors.each do |exhibitor|
+                .col-md-4
+                  .showcases-box
+                    .showcases-header
+                      .showcases-logo
+                        = image_tag exhibitor.logo
+                    .showcases-body
+                      .showcases-title = exhibitor.name
+                      .showcases-description = exhibitor.description
+      .row
+        .showcases-action
+          a.btn.btn-line-blue[href="#"]
+            |  Seja um expositor

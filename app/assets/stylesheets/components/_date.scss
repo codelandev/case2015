@@ -31,6 +31,14 @@
   top: -12px;
 }
 
+.date-year {
+  text-transform: uppercase;
+  transform: rotate(-45deg);
+  position: relative;
+  left: 25px;
+  top: -20px;
+}
+
 // <div class="date">
 //   <div class="date-day">21</div>
 //   <div class="date-month">Ago</div>
