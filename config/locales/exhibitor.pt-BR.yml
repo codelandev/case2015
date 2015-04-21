@@ -1,0 +1,12 @@
+pt-BR:
+  activerecord:
+    models:
+      exhibitor:
+        one: Expositor
+        other: Expositores
+    attributes:
+      exhibitor:
+      logo: logo
+      name: Nome
+      description: Descrição
+      website: Website
