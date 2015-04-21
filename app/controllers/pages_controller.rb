@@ -13,6 +13,10 @@ class PagesController < ApplicationController
     @speakers = Speaker.order("RANDOM()").first(8)
     ## Exhibitors
     @exhibitors = Exhibitor.order("RANDOM()").first(6)
+    ## Partners
+    @partners = Partner.order("RANDOM()").first(6)
+    ## Supporters
+    @supporters = Supporter.order("RANDOM()").first(6)
   end
 
   def sponsors
@@ -25,5 +29,13 @@ class PagesController < ApplicationController
 
   def exhibitors
     @exhibitors = Exhibitor.order("RANDOM()")
+  end
+
+  def partners
+    @partners = Partner.order("RANDOM()")
+  end
+
+  def supporters
+    @supporters = Supporter.order("RANDOM()")
   end
 end

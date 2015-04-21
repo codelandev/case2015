@@ -49,34 +49,8 @@
   = render 'sponsors_section'
   = render 'speaker_section'
   = render 'exhibitor_section'
-      .row
-        .showcases-action
-          a.btn.btn-line-blue[href="#"]
-            |  Seja um expositor
-  section.partner
-    h1.text-blue.u-uppercase.section-title
-      |  Quem nos patrocinou
-    .container
-      ul.partners
-        li.partners-item
-          a.partners-link[href="#"]
-            = image_tag "google.png"
-        li.partners-item
-          = image_tag "amazon.png"
-        li.partners-item
-          a.partners-link[href="#"]
-            = image_tag "cisco.png"
-        li.partners-item
-          a.partners-link[href="#"]
-            = image_tag "facebook.png"
-        li.partners-item
-          a.partners-link[href="#"]
-            = image_tag "intel.png"
-        li.partners-item
-          a.partners-link[href="#"]
-            = image_tag "microsoft.png"
-      a[href=""]
-        |  Saiba mais
+  = render 'partners_section'
+
   section.download
     .container
       .row
@@ -89,30 +63,9 @@
             = image_tag "appstore.png"
           a[href="#"]
             = image_tag "playstore.png"
-  section.partner
-    h1.text-blue.u-uppercase.section-title
-      |  Quem nos patrocinou
-    .container
-      ul.partners
-        li.partners-item
-          a.partners-link[href="#"]
-            = image_tag "google.png"
-        li.partners-item
-          = image_tag "amazon.png"
-        li.partners-item
-          a.partners-link[href="#"]
-            = image_tag "cisco.png"
-        li.partners-item
-          a.partners-link[href="#"]
-            = image_tag "facebook.png"
-        li.partners-item
-          a.partners-link[href="#"]
-            = image_tag "intel.png"
-        li.partners-item
-          a.partners-link[href="#"]
-            = image_tag "microsoft.png"
-      a[href=""]
-        |  Saiba mais
+
+  = render 'supporters_section'
+
   section.subscribe
     .container
       .row
