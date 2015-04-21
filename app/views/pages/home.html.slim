@@ -21,34 +21,10 @@
               br
               a.btn.btn-more[href=""]
                 | Saiba mais
-  - if @event_days.any?
-    section.schedule
-      h1.text-blue.u-uppercase.section-title
-        |  Agenda do evento
-      .container
-        - @event_days.each do |event_day|
-          .row
-            .col-md-7.col-centered
-              ul.schedule-box
-                li.schedule-item.schedule-header.clearfix
-                  .date
-                    .date-day = event_day.date.day
-                    .date-month = event_day.short_month
-                    - unless event_day.current_year?
-                      // #todo deixar o estilo decente (ou não também, não é pra acontecer isso)
-                      .date-year = event_day.date.year
-                - event_day.events.each do |event|
-                  li.schedule-item.clearfix
-                    span.schedule-hours = "#{sprintf '%02d', event.happens_at.hour}h"
-                    .schedule-info
-                      h3.schedule-title
-                        span = event.title
-                      span.schedule-speaker = event.speaker
-                      - if event.place.present?
-                        span.schedule-place = event.place
+  = render 'events_section'
   = render 'sponsors_section'
-  = render 'speaker_section'
-  = render 'exhibitor_section'
+  = render 'speakers_section'
+  = render 'exhibitors_section'
   = render 'partners_section'
 
   section.download
