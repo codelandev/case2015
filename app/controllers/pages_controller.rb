@@ -48,4 +48,7 @@ class PagesController < ApplicationController
       @event_days << EventDay.new(events: events, date: date)
     end
   end
+
+  def mobile_app
+  end
 end
