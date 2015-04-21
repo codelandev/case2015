@@ -10,9 +10,16 @@ class PagesController < ApplicationController
     ## Sponsors
     @sponsors = Sponsor.order("RANDOM()").first(6)
     end
+
+    ## Speakers
+    @speakers = Speaker.order("RANDOM()").first(8)
   end
 
   def sponsors
     @sponsors = Sponsor.order("RANDOM()")
+  end
+
+  def speakers
+    @speakers = Sponsor.order("RANDOM()")
   end
 end

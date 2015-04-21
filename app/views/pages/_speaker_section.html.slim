@@ -1,0 +1,21 @@
+- if @speakers.any?
+  section.speaker
+    h1.text-blue.u-uppercase.section-title
+      |  Quem já palestrou no evento
+    .container
+      .row
+        .col-md-8.col-centered
+          ul.speakers
+            - @speakers.each do |speaker|
+              li.speakers-item
+                .speakers-photo
+                  .photo[style="background-image: url(#{speaker.avatar})"]
+                .speakers-description
+                  h2 = speaker.name
+                  - if speaker.website.present?
+                    span = link_to speaker.company, speaker.website
+                  - else
+                    span = speaker.company
+          - if params[:action] == 'home'
+          .showcases-action
+            = link_to 'Veja todos', speakers_path, class:'btn btn-more'

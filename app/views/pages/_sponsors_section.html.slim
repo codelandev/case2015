@@ -9,5 +9,6 @@
               = link_to sponsor.website, class: 'partners-link' do
                 = image_tag sponsor.logo
                 // #todo arrumar largura das imagens
-        .showcases-action
-          = link_to 'Saiba mais', sponsors_path, class:'btn btn-line-blue'
+        - if params[:action] == 'home'
+          .showcases-action
+            = link_to 'Saiba mais', sponsors_path, class:'btn btn-line-blue'
