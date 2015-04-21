@@ -46,20 +46,7 @@
                       span.schedule-speaker = event.speaker
                       - if event.place.present?
                         span.schedule-place = event.place
-  - if @sponsors.any?
-    section.partner
-      h1.text-blue.u-uppercase.section-title
-        |  Quem nos patrocinou
-      .container
-        ul.partners
-          - @sponsors.each do |sponsor|
-            li.partners-item
-              = link_to sponsor.website, class: 'partners-link' do
-                = image_tag sponsor.logo
-                // #todo arrumar largura das imagens
-        .showcases-action
-          a.btn.btn-line-blue[href="#"]
-            |  Saiba mais
+  = render 'sponsors_section'
   section.speaker
     h1.text-blue.u-uppercase.section-title
       |  Quem já palestrou no evento
