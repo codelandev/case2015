@@ -1,24 +1,35 @@
 .intro {
-  position: relative;
   background-image: image-url('bg.jpg');
+  background-size: cover;
+  background-position: center center;
+  position: relative;
   height: 600px;
   width: 100%;
   color: #fff;
 }
 
 .intro-wrapper {
-  height: 500px;
   position: relative;
 }
 
 .intro-call {
   text-align: center;
-  width: 500px;
-  margin: 0 auto;
+
+  img {
+    width: 65%;
+  }
 
   h1, h4 {
     margin-bottom: 20px;
     font-weight: 300;
     line-height: 1.4;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .intro-call {
+    img {
+      width: 90%;
+    }
   }
 }

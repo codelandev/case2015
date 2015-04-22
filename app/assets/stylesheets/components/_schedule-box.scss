@@ -64,3 +64,30 @@
     text-transform: uppercase;
   }
 }
+
+
+@media screen and (max-width: 660px) {
+  .schedule-hours,
+  .schedule-title,
+  .schedule-speaker,
+  .schedule-place,
+  .schedule-item,
+  .schedule-info {
+    width: 100%;
+    display: block;
+    text-align: center;
+    float: none;
+  }
+
+  .schedule-item {
+    padding: 20px 0;
+  }
+
+  .schedule-header {
+    padding-top: 70px;
+  }
+
+  .schedule-place:before {
+    content: '';
+  }
+}

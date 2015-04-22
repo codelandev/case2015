@@ -1,67 +1,50 @@
-.site-wrapper.js-site-wrapper
-  section.intro
-    .container
-      header.header
-        nav.nav
-          a.menu.js-nav-button[href="#"]
-            span
-            span
-            span
-    .intro-wrapper
-      .v-container
-        .u-middle
-          .intro-call
-            h1
-              = image_tag "logo.svg", alt: "Logo CASE"
-            h4
-              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime doloribus culpa reiciendis mollitia illum voluptatibus, quidem, illo nemo. Explicabo, rerum!
-            .intro-actions
-              a.btn.btn-line-white.btn-subscribe[href=""]
-                | Inscreva-se
-              br
-              a.btn.btn-more[href=""]
-                | Saiba mais
-  = render 'events_section'
-  = render 'sponsors_section'
-  = render 'speakers_section'
-  = render 'exhibitors_section'
-  = render 'partners_section'
-  = render 'mobile_app_section'
-  = render 'supporters_section'
+.triangle
+  = image_tag 'triangle-white.png'
+= render 'events_section'
+= render 'sponsors_section'
+= render 'speakers_section'
+.triangle
+  = image_tag 'triangle-black.png'
+.triangle
+  = image_tag 'triangle-white.png'
+= render 'exhibitors_section'
+= render 'partners_section'
+= render 'mobile_app_section'
+= render 'supporters_section'
 
-  section.subscribe
-    .container
-      .row
-        .col-md-6.col-centered.text-center
-          = image_tag "logo-blue.svg"
-          p.subscribe-date
-            | De 21 a 22 de agosto
-          .showcases-action
-            a.btn.btn-line-blue[href="#"]
-              |  Seja um expositor
-  section.place
-    h1.text-white.u-uppercase.section-title
-      |  O local
-    .container
-      .row
-        .col-md-6.col-centered
-          .place-map.text-center
-            = image_tag "http://placehold.it/600x235"
-          .place-map-description
-            h2
-              | Fecomercio
-            p
-              | Rua doutor plinio barreto, 285 - Bela vista. São Paulo SP
-          .row
-            .hotels
-              h3.text-white.u-uppercase.section-title
-                |  Hotéis mais próximos por nome startup
-              .col-md-4
-                = image_tag "http://placehold.it/150x80"
-              .col-md-4
-                = image_tag "http://placehold.it/150x80"
-              .col-md-4
-                = image_tag "http://placehold.it/150x80"
-          .place-action
-            a.btn[href=""]
-              | Saiba mais
+section.subscribe
+  .container
+    .row
+      .col-md-6.col-centered.text-center
+        = image_tag "logo-blue.svg"
+        p.subscribe-date
+          | De 21 a 22 de agosto
+        .showcases-action
+          a.btn.btn-line-blue[href="#"]
+            |  Seja um expositor
+section.place
+  h1.text-white.u-uppercase.section-title
+    |  O local
+  .container
+    .row
+      .col-md-6.col-centered
+        .place-map.text-center
+          = image_tag "http://placehold.it/600x235"
+        .place-map-description
+          h2
+            | Fecomercio
+          p
+            | Rua doutor plinio barreto, 285 - Bela vista. São Paulo SP
+        .row
+          .hotels
+            h3.text-white.u-uppercase.section-title
+              |  Hotéis mais próximos por nome startup
+            .col-md-4
+              = image_tag "http://placehold.it/150x80"
+            .col-md-4
+              = image_tag "http://placehold.it/150x80"
+            .col-md-4
+              = image_tag "http://placehold.it/150x80"
+        .place-action
+          a.btn[href=""]
+            | Saiba mais

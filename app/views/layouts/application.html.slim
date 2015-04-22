@@ -15,4 +15,7 @@ html
     = initjs_tag "Case2015"
     = render 'layouts/flash' if flash.any?
     = render 'partials/sidebar'
-    = yield
+    .site-wrapper.js-site-wrapper
+      = render 'partials/intro'
+      = yield
+      = render 'partials/footer'

@@ -5,9 +5,9 @@
     .container
       .row
         .col-md-8.col-centered
-          ul.speakers
+          .row.speakers
             - @speakers.each do |speaker|
-              li.speakers-item
+              .col-md-3.speakers-item
                 .speakers-photo
                   .photo[style="background-image: url(#{speaker.avatar})"]
                 .speakers-description
