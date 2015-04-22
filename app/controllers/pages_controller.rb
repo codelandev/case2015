@@ -53,5 +53,6 @@ class PagesController < ApplicationController
   end
 
   def about
+    @page = Page.find_by(title: PageTitle::ABOUT)
   end
 end
