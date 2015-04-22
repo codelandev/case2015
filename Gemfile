@@ -23,6 +23,7 @@ gem 'devise'
 gem 'devise-i18n'
 gem 'activeadmin', github: 'activeadmin'
 gem 'active_admin_editor', github: 'ejholmes/active_admin_editor'
+gem 'kaminari'
 
 group :development, :test do
   gem 'spring'

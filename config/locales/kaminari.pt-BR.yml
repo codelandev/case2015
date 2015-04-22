@@ -1,0 +1,10 @@
+#encoding: utf-8
+
+pt-BR:
+  views:
+    pagination:
+      first: "Primeira"
+      last: "Última"
+      previous: "<"
+      next: ">"
+      truncate: "..."

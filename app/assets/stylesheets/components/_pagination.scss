@@ -1,0 +1,29 @@
+.pagination-wrapper {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.pagination {
+  margin: 0 auto;
+  text-align: center;
+
+  span {
+    padding: 5px 10px;
+    cursor: pointer;
+    background: $brand-blue-light;
+    color: #fff;
+    margin: 0 10px;
+    border-radius: 5px;
+    display: inline-block;
+
+    a {
+      display: block;
+      color: #fff;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}

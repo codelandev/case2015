@@ -376,6 +376,7 @@ DEPENDENCIES
   initjs (~> 2.1.2)
   jbuilder (~> 2.0)
   jquery-rails
+  kaminari
   letter_opener
   maskedinput-rails
   nprogress-rails

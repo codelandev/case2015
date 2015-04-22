@@ -1,5 +1,11 @@
 20.times do |n|
   n+=1
+  Post.create!(title: "Título #{n}",
+               short_description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.',
+               content: '<h1> Título </h1> <p> lorem ipsum </p>',
+               published_at: n.days.ago,
+               author: 'CASE')
+
   Event.create!(title: "Evento #{n}",
                 happens_at: (n*3).hours.from_now,
                 place: "Salão #{n}",
