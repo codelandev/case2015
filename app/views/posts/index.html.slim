@@ -1,0 +1,6 @@
+- @posts.each do |post|
+  = link_to post_path(post) do
+    h1 = post.title
+    p = post.short_description
+    span = post.published_at
+    span = post.author

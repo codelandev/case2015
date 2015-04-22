@@ -1,0 +1,15 @@
+pt-BR:
+  activerecord:
+    models:
+      post:
+        one: Postagem
+        other: Postagens
+    attributes:
+      post:
+        title: Título
+        published_at: Publicado em
+        short_description: Descrição curta
+        content: Conteúdo
+        author: Autor
+        created_at: Criado em
+        updated_at: Atualizado em
