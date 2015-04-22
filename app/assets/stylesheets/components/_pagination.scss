@@ -8,21 +8,30 @@
   text-align: center;
 
   span {
-    padding: 5px 10px;
-    cursor: pointer;
-    background: $brand-blue-light;
-    color: #fff;
-    margin: 0 10px;
-    border-radius: 5px;
     display: inline-block;
 
+    &.current {
+      color: white;
+      background-color: $brand-blue-light;
+      padding: 12px 17px;
+      border-radius: 3px;
+    }
     a {
+      padding: 10px 16px;
+      cursor: pointer;
+      border: 2px solid $brand-blue-light;
+      color: $brand-blue-light;
+      border-radius: 3px;
+      font-weight: bold;
       display: block;
-      color: #fff;
+      color: $brand-blue-light;
       cursor: pointer;
 
       &:hover {
         text-decoration: none;
+        border-radius: 3px;
+        color: white;
+        background-color: $brand-blue-light;
       }
     }
   }

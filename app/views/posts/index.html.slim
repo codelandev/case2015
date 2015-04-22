@@ -1,3 +1,5 @@
+.triangle
+  = image_tag 'triangle-white.png'
 .posts
   .container
     .row
@@ -6,11 +8,10 @@
           = link_to post_path(post), class: 'posts-link' do
             h1.posts-title = post.title
             p.posts-description = post.short_description
-            p.posts-date
-              span Publicado em:
-              = l post.published_at, format: :short
-            p.posts-author
-              span Autor:
-              = post.author
+            p
+              span.posts-author
+                = post.author
+              span.posts-date
+                = l post.published_at, format: :short
         .pagination-wrapper
           = paginate @posts
