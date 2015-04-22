@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   get 'expositores', to: 'pages#exhibitors', as: 'exhibitors'
   get 'parceiros', to: 'pages#partners', as: 'partners'
   get 'apoiadores', to: 'pages#supporters', as: 'supporters'
+  get 'blog', to: 'posts#index', as: 'posts'
+  get 'blog/:id', to: 'posts#show', as: 'post'
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
 end
