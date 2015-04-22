@@ -1,6 +1,11 @@
 .download {
   background: $brand-blue-light;
   padding: 80px;
+
+
+  a + a {
+    margin-left: 20px;
+  }
 }
 
 .download-title {
