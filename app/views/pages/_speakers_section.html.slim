@@ -12,10 +12,11 @@
                   .photo[style="background-image: url(#{speaker.avatar})"]
                 .speakers-description
                   h2 = speaker.name
-                  - if speaker.website.present?
-                    span = link_to speaker.company, speaker.website
-                  - else
-                    span = speaker.company
+                  span.speakers-information
+                    - if speaker.website.present?
+                      = link_to speaker.company, speaker.website
+                    - else
+                      = speaker.company
           - if params[:action] == 'home'
             .showcases-action
               = link_to 'Veja todos', speakers_path, class:'btn btn-more'

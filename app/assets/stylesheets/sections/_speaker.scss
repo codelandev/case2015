@@ -17,7 +17,6 @@
   h2 {
     font-size: 16px;
     font-weight: bold;
-    width: 100px;
     margin: 10px auto;
   }
 
@@ -34,6 +33,7 @@
   overflow: hidden;
   background: orange;
   margin: 0 auto;
+  border: 1px solid #fff;
 
   .photo {
     background-size: cover;
@@ -48,6 +48,9 @@
   margin-top: 40px;
 }
 
-.speakers-description span a{
-  color: #fff;
+.speakers-information {
+  a {
+    color: $brand-blue-light;
+    cursor: pointer;
+  }
 }
