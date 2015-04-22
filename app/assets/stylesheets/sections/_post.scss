@@ -1,0 +1,55 @@
+// ======== Index page
+
+.posts {
+  color: $brand-black-light;
+  margin: 40px 0;
+}
+
+.posts-link {
+  cursor: pointer;
+  color: $brand-black-light;
+  display: block;
+  padding: 10px;
+
+  &:hover {
+    text-decoration: none;
+    color: $brand-black-light;
+  }
+}
+
+.posts-title {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.posts-description {
+
+}
+.posts-date {
+  span {
+    margin-right: 5px;
+  }
+
+}
+.posts-author {
+
+  span {
+    margin-right: 5px;
+  }
+}
+
+.posts-action {
+  text-align: center;
+  margin: 40px 0;
+}
+
+// ======== Show page
+
+.post-title {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.post-header {
+  margin-bottom: 40px;
+}

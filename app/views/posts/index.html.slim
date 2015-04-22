@@ -1,6 +1,14 @@
-- @posts.each do |post|
-  = link_to post_path(post) do
-    h1 = post.title
-    p = post.short_description
-    span = post.published_at
-    span = post.author
+.posts
+  .container
+    .row
+      .col-md-8.col-centered
+        - @posts.each do |post|
+          = link_to post_path(post), class: 'posts-link' do
+            h1.posts-title = post.title
+            p.posts-description = post.short_description
+            p.posts-date
+              span Publicado em:
+              = l post.published_at, format: :short
+            p.posts-author
+              span Autor:
+              = post.author

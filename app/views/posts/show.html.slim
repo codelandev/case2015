@@ -1,4 +1,15 @@
-h1 = @post.title
-span = @post.author
-span = @post.published_at
-== @post.content
+.post
+  .container
+    .row
+      .col-md-8.col-centered
+        .post-header
+          h1.post-title = @post.title
+          p = l @post.published_at, format: :short
+        .post-content
+          == @post.content
+        p.posts-author
+          span Autor:
+          = @post.author
+        .posts-action
+          = link_to 'Todos as postagens', posts_path, class: 'btn btn-line-blue'
+
