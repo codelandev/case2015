@@ -51,4 +51,7 @@ class PagesController < ApplicationController
 
   def mobile_app
   end
+
+  def about
+  end
 end

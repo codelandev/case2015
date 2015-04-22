@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get 'apoiadores', to: 'pages#supporters', as: 'supporters'
   get 'blog', to: 'posts#index', as: 'posts'
   get 'blog/:id', to: 'posts#show', as: 'post'
+  get 'evento', to: 'pages#about', as: 'about'
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
 end
