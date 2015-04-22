@@ -1,0 +1,15 @@
+pt-BR:
+  enumerations:
+    page_title:
+      about: O Evento
+  activerecord:
+    models:
+      page:
+        one: Página
+        other: Páginas
+    attributes:
+      page:
+        title: Título
+        content: Conteúdo
+        created_at: Criado em
+        updated_at: Atualizado em
