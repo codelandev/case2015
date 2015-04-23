@@ -1,11 +1,18 @@
 footer.footer
   .container
     .row
-      .col-md-2
-        = image_tag 'logo.svg'
-      .col-md-2
-        = image_tag 'abs-logo.png'
-      .col-md-8
+      .footer-logos
+        .col-xs-6.col-sm-3.col-md-2
+          = link_to root_path do
+            = image_tag 'logo.svg', class: 'footer-logo'
+        .col-xs-6.col-sm-3.col-md-2
+          = link_to 'http://www.abstartups.com.br/', target: '_blank' do
+            = image_tag 'abs-logo.png'
+      .col-xs-12.col-sm-6.col-md-8
+        span.footer-email.text-white
+          | Dúvidas:&nbsp;
+          a.text-white href="mailto:case@abs.com.br" case@abs.com.br
+
         ul.social-links.pull-right
           li.twitter
             a
