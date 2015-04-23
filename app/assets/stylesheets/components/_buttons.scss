@@ -29,10 +29,18 @@
   }
 }
 
+.btn-link {
+  &:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+}
+
 .btn-subscribe {
   margin-top: 30px;
 }
 
 .btn-more {
   margin-top: 20px;
+  display: block;
 }

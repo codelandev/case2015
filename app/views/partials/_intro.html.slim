@@ -1,24 +1,17 @@
 section.intro
   .container
-    header.header
-      nav.nav
-        a.menu.js-nav-button[href="#"]
-          span
-          span
-          span
-  .intro-wrapper
-    .container
-      .v-container
-        .u-middle
-          .col-md-7.col-centered
-            .intro-call
-              h1
-                = image_tag "logo.svg", alt: "Logo CASE"
+    .intro-wrapper
+      .container
+        .v-container
+          .u-middle
+            .col-md-7.col-centered
+              .intro-call
+                h1
+                = link_to root_path do
+                  = image_tag "logo.svg", alt: "Logo CASE"
               h4
                 | O maior evento de startups e empreendedorismo da América Latina, com mais de 3500 participantes, reunindo todos os agentes do ecossistema: empreendedores que estão apenas começando, startups consolidadas, empresas de grande porte, aceleradoras, investores, fundo de investimentos, imprensa, enfim um evento para startups e não de startups, onde o empreendedor é rei.
               .intro-actions
-                a.btn.btn-line-white.btn-subscribe[href=""]
-                  | Garanta seu ingresso
-                br
-                a.btn.btn-more[href=""]
+                = link_to 'Garanta seu ingresso', 'https://www.sympla.com.br/case-2015__26296?utm_source=Garantaseuingresso&utm_medium=botao_call_site&utm_campaign=Site_CASE2015', class: 'btn btn-line-white btn-subscribe'
+                a.btn.btn-more.btn-link[href=""]
                   | Saiba mais

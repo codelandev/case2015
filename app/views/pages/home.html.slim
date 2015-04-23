@@ -20,31 +20,10 @@ section.subscribe
         p.subscribe-date
           | De 21 a 22 de agosto
         .showcases-action
-          a.btn.btn-line-blue[href="#"]
-            |  Seja um expositor
+          = link_to 'Garanta seu ingresso', 'https://www.sympla.com.br/case-2015__26296?utm_source=Garantaseuingresso&utm_medium=botao_call_site&utm_campaign=Site_CASE2015', class: 'btn btn-line-blue'
 section.place
-  h1.text-white.u-uppercase.section-title
-    |  O local
   .container
     .row
-      .col-md-6.col-centered
-        .place-map.text-center
-          = image_tag "http://placehold.it/600x235"
-        .place-map-description
-          h2
-            | Fecomercio
-          p
-            | Rua doutor plinio barreto, 285 - Bela vista. São Paulo SP
-        .row
-          .hotels
-            h3.text-white.u-uppercase.section-title
-              |  Hotéis mais próximos por nome startup
-            .col-md-4
-              = image_tag "http://placehold.it/150x80"
-            .col-md-4
-              = image_tag "http://placehold.it/150x80"
-            .col-md-4
-              = image_tag "http://placehold.it/150x80"
-        .place-action
-          a.btn[href=""]
-            | Saiba mais
+      .col-md-12
+        .place-iframe
+          iframe src="http://evnts.com.br/case/"
