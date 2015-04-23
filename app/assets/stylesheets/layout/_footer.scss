@@ -5,8 +5,26 @@
 
 
   img {
+    margin-top: 10px;
     max-width: 100%;
   }
+}
+
+.footer-logos {
+  @media screen and (max-width: 767px) {
+    img { margin-bottom: 10px;}
+    img.footer-logo {
+      max-width: 180px;
+      width: 100%;
+    }
+  }
+}
+
+.footer-email {
+  display: inline-block;
+  margin-top: 11px;
+  font-size: 13px;
+  text-align: right;
 }
 
 .social-links {
@@ -35,5 +53,20 @@
       text-decoration: none;
       cursor: pointer;
     }
+  }
+
+}
+
+@media screen and (max-width: 338px) {
+  .social-links {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+  }
+  .footer-email {
+    text-align: center;
+    margin: 0 auto;
+    padding: 5px 0 15px 0;
+    width: 100%;
   }
 }
