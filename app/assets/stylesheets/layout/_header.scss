@@ -1,7 +1,7 @@
 .menu {
   cursor: pointer;
   display: block;
-  width: 30px;
+  width: 31px;
   z-index: 3000;
   position: absolute;
   right: 11%;
@@ -20,6 +20,9 @@
   &.menu-close {
     position: fixed;
     right: 20px;
+    color: #fff;
+
+    span { background-color: $brand-yellow; }
 
     span:first-child {
       transform-origin: left center;

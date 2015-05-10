@@ -1,14 +1,11 @@
 - if @supporters.any?
-  section.partner
-    h1.text-blue.u-uppercase.section-title
-      |  Apoiadores
+  section.partner.brand-blue-light
+    h1.text-blue-medium.u-uppercase.section-title
+      |  Apoio
     .container
-      ul.partners
-        - @supporters.each do |supporter|
-          li.partners-item
-            = link_to supporter.website, class: 'partners-link' do
-              = image_tag supporter.logo
-              // #todo arrumar tamanho das logos
-    - if params[:action] == 'home'
-      .showcases-action
-        = link_to 'Saiba mais', supporters_path, class:'btn btn-line-blue'
+      .row
+        ul.partners.u-center
+          - @supporters.each do |supporter|
+            li.col-md-2.u-text-center
+              = link_to supporter.website, class: 'partners-link' do
+                = image_tag supporter.logo

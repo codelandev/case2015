@@ -1,6 +1,6 @@
 .side-nav {
   position: fixed;
-  background: $brand-blue-light;
+  background: $brand-blue-medium;
   right: 0;
   bottom: 0;
   top: 0;
@@ -24,7 +24,7 @@
     color: #fff;
 
     &:hover {
-      background: #333;
+      background: $brand-blue-light;
       color: #fff;
       text-decoration: none;
     }

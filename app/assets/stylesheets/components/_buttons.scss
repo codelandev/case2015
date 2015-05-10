@@ -40,6 +40,16 @@
   }
 }
 
+.btn-line-blue-medium {
+  border-color: $brand-blue-medium;
+  color: $brand-blue-medium;
+
+  &:hover {
+    background: $brand-blue-medium;
+    color: #fff;
+  }
+}
+
 .btn-link {
   color: $brand-blue-medium;
   &:hover {

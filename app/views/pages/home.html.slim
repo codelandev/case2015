@@ -1,10 +1,12 @@
 = render 'events_section'
+
 section.place
   .container
     .row
       .col-md-12
         .place-iframe
-          iframe src="http://evnts.com.br/case/"
+          iframe#evnts src="http://evnts.com.br/case/"
+
 section.schedule-sympla
   h1.text-blue.u-uppercase.section-title
     | Garanta seu ingresso
@@ -13,23 +15,10 @@ section.schedule-sympla
       .col-md-7.col-sm-12.col-centered
         #sympla_tickets style="text-align:left;"
           iframe  frameborder="0"  width="100%" height="350px" src="http://www.sympla.com.br/tickets-widget?eid=26296&lang=pt" vspace="0" hspace="0" marginheight="0" marginwidth="5" scrolling="auto" allowtransparency="true"
+
 = render 'speakers_section'
-.triangle
-  = image_tag 'triangle-black.png'
-.triangle
-  = image_tag 'triangle-white.png'
 = render 'exhibitors_section'
 = render 'sponsors_section'
 = render 'partners_section'
 = render 'supporters_section'
 = render 'mobile_app_section'
-
-/ section.subscribe
-/   .container
-/     .row
-/       .col-md-6.col-centered.text-center
-/         = image_tag "logo-blue.svg"
-/         p.subscribe-date
-/           | De 21 a 22 de agosto
-/         .showcases-action
-/           = link_to 'Garanta seu ingresso', 'https://www.sympla.com.br/case-2015__26296?utm_source=Garantaseuingresso&utm_medium=botao_call_site&utm_campaign=Site_CASE2015', class: 'btn btn-line-blue'

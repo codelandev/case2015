@@ -30,3 +30,18 @@ html
 
     ga('create', 'UA-62319450-1', 'auto');
     ga('send', 'pageview');
+
+    function callFnParent (evt) {
+      var acao = evt.data.split(':')[0];
+      if(acao == "redim"){
+        var iFrame = document.getElementById("evnts");
+        iFrame.style.height = "" + evt.data.split(':')[1];
+      }
+      if(acao == "mover"){
+        window.scrollTo(0, document.body.scrollHeight - 500);
+      }
+      if(acao == "deslocar"){
+        var altura = "" + evt.data.split(':')[1];
+        window.scrollTo(0, altura);
+      }
+    }
