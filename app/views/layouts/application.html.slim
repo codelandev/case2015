@@ -7,16 +7,16 @@ html
       = javascript_include_tag "//html5shiv.googlecode.com/svn/trunk/html5.js"
     meta[name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"]
     title = content_for?(:page_title) ? "CASE 2015 - #{yield(:page_title)}" : "CASE 2015"
-    = stylesheet_link_tag 'application', '//fonts.googleapis.com/css?family=Roboto:400,700,300', media: 'all', 'data-turbolinks-track' => true
+    = stylesheet_link_tag 'application', '//fonts.googleapis.com/css?family=Open+Sans:400,700,800', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
 
   body class="#{params[:action]}"
     = initjs_tag "Case2015"
     = render 'layouts/flash' if flash.any?
-    / Only for may 11th
-    / = render 'partials/sidebar'
-    / = render 'partials/header'
+
+    = render 'partials/sidebar'
+    = render 'partials/header'
     .site-wrapper.js-site-wrapper
       = render 'partials/intro'
       = yield

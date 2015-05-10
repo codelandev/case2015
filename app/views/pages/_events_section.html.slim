@@ -1,7 +1,7 @@
 - if @event_days.any?
   section.schedule
-    h1.text-blue.u-uppercase.section-title
-      |  Agenda do evento
+    h1.text-yellow.u-uppercase.section-title
+      |  Programação
     .container
       - @event_days.each do |event_day|
         .row
@@ -12,11 +12,10 @@
                   .date-day = event_day.date.day
                   .date-month = event_day.short_month
                   - unless event_day.current_year?
-                    // #todo deixar o estilo decente (ou não também, não é pra acontecer isso)
                     .date-year = event_day.date.year
               - event_day.events.each do |event|
                 li.schedule-item.clearfix
-                  span.schedule-hours = "#{sprintf '%02d', event.happens_at.hour}h"
+                  span.schedule-hours = "#{sprintf '%02d', event.happens_at.hour}h#{sprintf '%02d', event.happens_at.min}"
                   .schedule-info
                     h3.schedule-title
                       span = event.title

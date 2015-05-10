@@ -1,18 +1,25 @@
 .schedule-box {
-  background: $brand-gray-light;
+  background: $brand-blue-medium;
   list-style: none;
   margin: 0;
   margin-top: 80px;
+  li.schedule-item:nth-child(1) { border: 0px; }
+
+  li.schedule-item:nth-child(2) {
+    background-color: $brand-blue-light;
+    .schedule-title { color: $brand-blue-medium; }
+  }
+  li.schedule-item:last-child { border: 0px; }
 }
 
 .schedule-header,
 .schedule-break {
-  background: $brand-gray-medium;
+  background: $brand-blue-light;
 }
 
 .schedule-item {
   padding: 20px 0 20px 68px;
-  border-bottom: 1px solid #e2e2e2;
+  border-bottom: 1px solid #fff;
 }
 
 .schedule-info {
@@ -38,22 +45,22 @@
 
 .schedule-hours {
   font-size: 16px;
-  color: $brand-gray-high;
-  font-weight: bold;
+  color: $brand-yellow;
+  font-weight: 700;
   float: left;
-  width: 60px;
-  text-align: center;
+  width: 70px;
+  text-align: left;
 }
 
 .schedule-speaker {
-  color: $brand-black-light;
+  color: #777;
 }
 
 .schedule-place {
-  color: #999;;
+  color: #fff;
 
   &:before {
-    content: "| ";
+    content: "  |  ";
   }
 }
 
