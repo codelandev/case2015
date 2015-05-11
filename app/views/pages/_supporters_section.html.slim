@@ -1,5 +1,5 @@
 - if @supporters.any?
-  - if params[:action] || 'home'
+  - if params[:action] != 'home'
     .triangle
       = image_tag 'triangle-blue.png'
   section.partner.brand-blue-light
