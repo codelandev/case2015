@@ -44,4 +44,6 @@ html
         var altura = "" + evt.data.split(':')[1];
         window.scrollTo(0, altura);
       }
+
     }
+    window.addEventListener("message", callFnParent, false);
