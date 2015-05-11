@@ -3,12 +3,9 @@
     h1.text-blue.u-uppercase.section-title
       |  Parceiros
     .container
-      ul.partners
-        - @partners.each do |partner|
-          li.partners-item
-            = link_to partner.website, class: 'partners-link' do
-              = image_tag partner.logo
-              // #todo arrumar tamanho das logos
-      - if params[:action] == 'home'
-        .showcases-action
-          = link_to 'Saiba mais', partners_path, class:'btn btn-line-blue'
+      .row
+        ul.partners
+          - @partners.each do |partner|
+            li.col-md-2.u-text-center.partners-item
+              = link_to partner.website, class: 'partners-link' do
+                = image_tag partner.logo

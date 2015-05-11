@@ -1,6 +1,18 @@
 .showcase {
-  background: #fff;
+  background-image: image-url('home-exhibitors.png');
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  position: relative;
   padding: 80px 0;
+
+  .section-title { padding-top: 70px; }
+
+  &.no-bg {
+    background-image: none;
+    background-color: #fff;
+    padding-top: 0;
+  }
 }
 
 .showcases {
@@ -12,36 +24,48 @@
   }
 }
 
+.showcases-box { margin-bottom: 30px; }
+
 .showcases-header {
   background: $brand-black-light;
   text-align: center;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
 }
 
 .showcases-logo {
   width: 100%;
-  padding: 35px;
+  background-size: cover;
+  position: relative;
+  background-position: center center;
 
-  img {
-    max-width: 100%;
-  }
+  img { max-width: 100%; }
 }
 
 .showcases-body {
   background: $brand-gray-light;
   padding: 30px;
+  height: 166px;
+  max-height: 166px;
+  min-height: 166px;
 }
 
 .showcases-title {
   font-size: 18px;
   color: $brand-black-light;
   font-weight: bold;
+  max-height: 26px;
+  overflow-y: hidden;
 }
 
 .showcases-description {
   color: #999;
+  max-height: 80px;
+  overflow-y: hidden;
 }
 
 .showcases-action {
-  margin-top: 50px;
+  padding-top: 30px;
   text-align: center;
 }

@@ -1,5 +1,5 @@
 .footer {
-  background: $brand-blue-medium;
+  background: $brand-blue-light;
   width: 100%;
   padding: 20px 0;
 
@@ -22,13 +22,13 @@
 
 .footer-email {
   display: inline-block;
-  margin-top: 11px;
+  margin-top: 14px;
   font-size: 13px;
   text-align: right;
 }
 
 .social-links {
-  margin: 0;
+  margin: 3px 0 0 0;
 
   li {
     display: inline-block;
@@ -42,7 +42,7 @@
     display: block;
     height: 40px;
     width: 40px;
-    background: $brand-blue-light;
+    background: $brand-blue-medium;
     font-size: 20px;
     text-align: center;
     padding: 10px 0;

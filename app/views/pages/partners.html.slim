@@ -1,2 +1,13 @@
-// #todo adicionar o resto do estilo da página
-= render 'partners_section', partners: @partners
+- if @partners.any?
+  .triangle
+    = image_tag 'triangle-white.png'
+  section.partner.no-bg
+    h1.text-blue.u-uppercase.section-title
+      |  Parceiros
+    .container
+      .row
+        ul.partners
+          - @partners.each do |partner|
+            li.col-md-2.u-text-center.partners-item
+              = link_to partner.website, class: 'partners-link' do
+                = image_tag partner.logo

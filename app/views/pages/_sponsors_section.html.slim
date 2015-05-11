@@ -1,14 +1,17 @@
 - if @sponsors.any?
-  section.partner
-    h1.text-blue.u-uppercase.section-title
-      |  Quem nos patrocinou
+  section.partner.brand-blue-light
+    h1.text-blue-medium.u-uppercase.section-title
+      |  Quem já patrocinou
     .container
-      ul.partners
-        - @sponsors.each do |sponsor|
-          li.partners-item
-            = link_to sponsor.website, class: 'partners-link' do
-              = image_tag sponsor.logo
-              // #todo arrumar largura das imagens
+      .row
+        ul.partners
+          - @sponsors.each do |sponsor|
+            li.col-md-2.u-text-center.partners-item
+              = link_to sponsor.website, class: 'partners-link' do
+                = image_tag sponsor.logo
       - if params[:action] == 'home'
-        .showcases-action
-          = link_to 'Saiba mais', sponsors_path, class:'btn btn-line-blue'
+        .row
+          .showcases-action
+            h4.text-blue-medium.u-uppercase
+              | Quer ser expositor/patrocinador do CASE2015?
+            = link_to 'Entre em contato', sponsors_path, class:'btn btn-line-blue-medium'

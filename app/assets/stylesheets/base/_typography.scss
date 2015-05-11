@@ -1,16 +1,12 @@
-body {
-  font-family: 'Open Sans', sans-serif;
-}
+body { font-family: 'Open Sans', sans-serif; }
 
-h1 {
-  font-size: 2em;
-}
+h1 { font-size: 2em; }
 
 
-.text-blue {
-  color: $brand-blue-light !important;
-}
+.text-blue { color: $brand-blue-light !important; }
 
-.text-white {
-  color: #fff !important;
-}
+.text-blue-medium { color: $brand-blue-medium !important; }
+
+.text-white { color: #fff !important; }
+
+.text-yellow { color: $brand-yellow !important; }

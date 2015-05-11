@@ -8,6 +8,7 @@
   cursor: pointer;
   transition: all .3s ease;
   color: #fff;
+  border-radius: 0px;
 }
 
 .btn-line-white {
@@ -16,6 +17,16 @@
   &:hover {
     background: #fff;
     color: #0c2849;
+  }
+}
+
+.btn-line-yellow {
+  border-color: $brand-yellow;
+  color: $brand-yellow;
+
+  &:hover {
+    background: $brand-yellow;
+    color: $brand-blue-medium;
   }
 }
 
@@ -29,9 +40,20 @@
   }
 }
 
-.btn-link {
+.btn-line-blue-medium {
+  border-color: $brand-blue-medium;
+  color: $brand-blue-medium;
+
   &:hover {
+    background: $brand-blue-medium;
     color: #fff;
+  }
+}
+
+.btn-link {
+  color: $brand-blue-medium;
+  &:hover {
+    color: $brand-blue-medium;
     text-decoration: underline;
   }
 }
