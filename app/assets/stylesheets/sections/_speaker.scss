@@ -6,6 +6,12 @@
   position: relative;
   width: 100%;
   padding: 80px 0;
+  &.no-bg {
+    background-image: none;
+    background-color: #fff;
+    .speakers-information,
+    .speakers-information a { color: $brand-blue-medium; }
+  }
 }
 
 .speakers {

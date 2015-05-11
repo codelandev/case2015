@@ -17,6 +17,4 @@
                       = link_to speaker.company, speaker.website
                     - else
                       = speaker.company
-          - if params[:action] == 'home'
-            .showcases-action
-              = link_to 'Saiba Mais', speakers_path, class:'btn btn-more btn-link'
+

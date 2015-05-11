@@ -1,2 +1,20 @@
-// #todo adicionar o resto do estilo da página
-= render 'exhibitors_section'
+- if @exhibitors.any?
+  .triangle
+    = image_tag 'triangle-white.png'
+  section.showcase.no-bg
+    h1.text-blue.u-uppercase.section-title
+      |  Expositores do evento
+    .container
+      .row
+        .col-md-10.col-centered
+          .showcases
+            .row
+              - @exhibitors.each do |exhibitor|
+                .col-md-4.col-sm-6
+                  .showcases-box
+                    .showcases-header
+                      .showcases-logo
+                        = image_tag exhibitor.logo
+                    .showcases-body
+                      .showcases-title = exhibitor.name
+                      .showcases-description = exhibitor.description

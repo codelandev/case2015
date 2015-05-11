@@ -1,2 +1,19 @@
-// #todo adicionar o resto do estilo da página
-= render 'sponsors_section'
+- if @sponsors.any?
+  .triangle
+    = image_tag 'triangle-blue.png'
+  section.partner.brand-blue-light
+    h1.text-blue-medium.u-uppercase.section-title
+      |  Quem já patrocinou
+    .container
+      .row
+        ul.partners
+          - @sponsors.each do |sponsor|
+            li.col-md-2.u-text-center.partners-item
+              = link_to sponsor.website, class: 'partners-link' do
+                = image_tag sponsor.logo
+      - if params[:action] == 'home'
+        .row
+          .showcases-action
+            h4.text-blue-medium.u-uppercase
+              | Quer ser expositor/patrocinador do CASE2015?
+            = link_to 'Entre em contato', sponsors_path, class:'btn btn-line-blue-medium'

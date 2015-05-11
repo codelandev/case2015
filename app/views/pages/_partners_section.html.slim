@@ -6,6 +6,6 @@
       .row
         ul.partners
           - @partners.each do |partner|
-            li.col-md-2.u-text-center
+            li.col-md-2.u-text-center.partners-item
               = link_to partner.website, class: 'partners-link' do
                 = image_tag partner.logo

@@ -1,4 +1,7 @@
 - if @supporters.any?
+  - if params[:action] || 'home'
+    .triangle
+      = image_tag 'triangle-blue.png'
   section.partner.brand-blue-light
     h1.text-blue-medium.u-uppercase.section-title
       |  Apoio
@@ -6,6 +9,6 @@
       .row
         ul.partners.u-center
           - @supporters.each do |supporter|
-            li.col-md-2.u-text-center
+            li.col-md-2.u-text-center.partners-item
               = link_to supporter.website, class: 'partners-link' do
                 = image_tag supporter.logo
