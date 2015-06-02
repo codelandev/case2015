@@ -1,5 +1,13 @@
 = render 'events_section'
-
+= render 'speakers_section'
+section.schedule-sympla
+  h1.text-blue.u-uppercase.section-title
+    | Garanta seu ingresso
+  .container
+    .row
+      .col-md-7.col-sm-12.col-centered
+        #sympla_tickets style="text-align:left;"
+          iframe  frameborder="0"  width="100%" height="350px" src="http://www.sympla.com.br/tickets-widget?eid=26296&lang=pt" vspace="0" hspace="0" marginheight="0" marginwidth="5" scrolling="auto" allowtransparency="true"
 section.place
   h1.text-white.u-uppercase.section-title
     | Local do evento
@@ -13,17 +21,6 @@ section.place
         /   strong Federação do Comércio do Estado de São Paulo (FECOMERCIO)
         /   br
         /   | Rua Doutor Plínio Barreto, 285 - Bela Vista. São Paulo - SP
-
-section.schedule-sympla
-  h1.text-blue.u-uppercase.section-title
-    | Garanta seu ingresso
-  .container
-    .row
-      .col-md-7.col-sm-12.col-centered
-        #sympla_tickets style="text-align:left;"
-          iframe  frameborder="0"  width="100%" height="350px" src="http://www.sympla.com.br/tickets-widget?eid=26296&lang=pt" vspace="0" hspace="0" marginheight="0" marginwidth="5" scrolling="auto" allowtransparency="true"
-
-= render 'speakers_section'
 = render 'exhibitors_section'
 = render 'sponsors_section'
 = render 'partners_section'
