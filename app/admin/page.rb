@@ -1,6 +1,8 @@
 ActiveAdmin.register Page do
   permit_params :title, :content
 
+  actions :all, except: :show
+
   form do |f|
     inputs :page do
       input :title, collection: PageTitle.to_a, as: :select, include_blank: false
@@ -10,7 +12,10 @@ ActiveAdmin.register Page do
   end
 
   index do
-    column :title
+    column :title do |page|
+      page.title_humanize
+    end
+    column :updated_at
     actions
   end
 end
