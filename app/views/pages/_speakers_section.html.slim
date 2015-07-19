@@ -4,7 +4,7 @@
       |  Quem irá Palestrar
     .container
       .row
-        .col-md-8.col-centered
+        .col-md-9.col-centered
           .row.speakers
             - @speakers.each do |speaker|
               .col-md-3.col-sm-4.speakers-item
@@ -12,7 +12,7 @@
                   .photo[style="background-image: url(#{speaker.avatar})"]
                 .speakers-description
                   h2.text-blue-medium = speaker.name
-                  span.speakers-information
+                  .speakers-information
                     - if speaker.website.present?
                       = link_to speaker.company, speaker.website
                     - else

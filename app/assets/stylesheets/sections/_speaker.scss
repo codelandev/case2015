@@ -9,6 +9,7 @@
   &.no-bg {
     background-image: none;
     background-color: #fff;
+    padding: 40px 0;
     .speakers-information,
     .speakers-information a { color: $brand-blue-medium; }
   }
@@ -56,10 +57,21 @@
 
 .speakers-description {
   margin-top: 40px;
+  margin-bottom: 15px;
+
+  h2 {
+    width: 100%;
+    overflow: hidden;
+    height: 20px;
+  }
 }
 
 .speakers-information {
   color: #fff;
+  width: 100%;
+  overflow: hidden;
+  height: 20px;
+
   a {
     color: #fff;
     cursor: pointer;
