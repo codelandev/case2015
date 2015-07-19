@@ -1,6 +1,6 @@
 ActiveAdmin.register Page do
   permit_params :title, :content
-
+  menu priority: 4
   actions :all, except: :show
 
   form do |f|
