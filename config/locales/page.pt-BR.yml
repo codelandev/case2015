@@ -2,6 +2,7 @@ pt-BR:
   enumerations:
     page_title:
       about: O Evento
+      about_en: The Conference
   activerecord:
     models:
       page:

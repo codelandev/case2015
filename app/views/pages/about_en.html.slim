@@ -1,0 +1,9 @@
+.triangle
+  = image_tag 'triangle-white.png'
+.post
+  .container
+    .row
+      .col-md-8.col-centered
+        - if @page.present?
+          h1.text-blue.u-uppercase.section-title = @page.title_humanize
+          p.posts-description == @page.content

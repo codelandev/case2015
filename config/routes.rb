@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get 'blog', to: 'posts#index', as: 'posts'
   get 'blog/:id', to: 'posts#show', as: 'post'
   get 'evento', to: 'pages#about', as: 'about'
+  get 'about', to: 'pages#about_en', as: 'about_en'
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
 end
