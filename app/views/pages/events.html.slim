@@ -1,1 +1,31 @@
-= render 'events_section', events: @events
+/ = render 'events_section', events: @events
+
+- if @event_days.any?
+  section.schedule
+    h1.text-yellow.u-uppercase.section-title
+      |  Programação
+    .container
+      .row
+        .col-md-7.col-centered
+          p A Conferência Anual de Startups e Empreendedorismo (CASE), é o maior evento para startups da América Latina.
+          p Organizado pela Associação Brasileira de Startups (ABStartups), o evento tem como objetivo proporcionar para empreendedores, um ambiente com conteúdo de nível internacional para startups grow-stage, uma feira de negócios com os principais fornecedores de produtos e serviços e networkting altamente qualificado com os melhores agentes do ecossistema brasileiro de inovação, empreendedorismo e startups.
+      - @event_days.each do |event_day|
+        .row
+          .col-md-7.col-centered
+            ul.schedule-box
+              li.schedule-item.schedule-header.clearfix
+                .date
+                  .date-day = event_day.date.day
+                  .date-month = event_day.short_month
+                  - unless event_day.current_year?
+                    .date-year = event_day.date.year
+              - event_day.events.each do |event|
+                li.schedule-item.clearfix
+                  span.schedule-hours = "#{sprintf '%02d', event.happens_at.hour}h#{sprintf '%02d', event.happens_at.min}"
+                  .schedule-info
+                    h3.schedule-title
+                      span = event.title
+                    span.schedule-speaker = event.speaker
+                    - if event.place.present?
+                      span.schedule-place = event.place
+
