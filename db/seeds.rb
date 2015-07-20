@@ -19,7 +19,8 @@
   Speaker.create!(name: "Palestrante #{n}",
                   company: "Empresa #{n}",
                   website: 'http://google.com',
-                  avatar: File.open(Rails.root.join('public', 'fixtures', 'avatar.jpeg')))
+                  avatar: File.open(Rails.root.join('public', 'fixtures', 'avatar.jpeg')),
+                  bio: 'lorem ipsum dolor sit amet')
 
   Partner.create!(logo: File.open(Rails.root.join('public', 'fixtures', 'logo.jpeg')),
                   website: 'http://google.com')
