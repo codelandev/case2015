@@ -21,7 +21,7 @@
                     .date-year = event_day.date.year
               - event_day.events.each do |event|
                 li.schedule-item.clearfix
-                  span.schedule-hours = "#{sprintf '%02d', event.happens_at.hour}h#{sprintf '%02d', event.happens_at.min}"
+                  .schedule-hours = "#{sprintf '%02d', event.happens_at.hour}h#{sprintf '%02d', event.happens_at.min}"
                   .schedule-info
                     h3.schedule-title
                       span = event.title

@@ -23,7 +23,7 @@
 }
 
 .schedule-info {
-  float: left;
+  display: table-cell;
 }
 
 .schedule-header {
@@ -47,9 +47,9 @@
   font-size: 16px;
   color: $brand-yellow;
   font-weight: 700;
-  float: left;
   width: 70px;
   text-align: left;
+  display: table-cell;
 }
 
 .schedule-speaker {
