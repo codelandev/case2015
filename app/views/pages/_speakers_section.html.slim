@@ -17,5 +17,4 @@
                       = link_to speaker.company, speaker.website
                     - else
                       = speaker.company
-                    p
-                      small = speaker.bio
+                .speakers-bio = sanitize speaker.bio
