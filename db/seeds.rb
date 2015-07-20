@@ -11,7 +11,7 @@
                 place: "Salão #{n}",
                 speaker: "Palestrante #{n}")
 
-  Exhibitor.create!(logo: open('http://lorempixel.com/600/400/abstract/'),
+  Exhibitor.create!(logo: File.open(Rails.root.join('public', 'fixtures', 'logo.jpeg')),
                     name: "Expositor #{n}",
                     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporvelit esse cillum dolore eu fugiat nulla.',
                     website: 'http://google.com')
@@ -19,14 +19,14 @@
   Speaker.create!(name: "Palestrante #{n}",
                   company: "Empresa #{n}",
                   website: 'http://google.com',
-                  avatar: open('http://lorempixel.com/600/400/people/'))
+                  avatar: File.open(Rails.root.join('public', 'fixtures', 'avatar.jpeg')))
 
-  Partner.create!(logo: open('http://lorempixel.com/600/400/abstract/'),
+  Partner.create!(logo: File.open(Rails.root.join('public', 'fixtures', 'logo.jpeg')),
                   website: 'http://google.com')
 
-  Sponsor.create!(logo: open('http://lorempixel.com/600/400/abstract/'),
+  Sponsor.create!(logo: File.open(Rails.root.join('public', 'fixtures', 'logo.jpeg')),
                   website: 'http://google.com')
 
-  Supporter.create!(logo: open('http://lorempixel.com/600/400/abstract/'),
+  Supporter.create!(logo: File.open(Rails.root.join('public', 'fixtures', 'logo.jpeg')),
                     website: 'http://google.com')
 end
