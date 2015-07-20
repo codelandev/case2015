@@ -8,8 +8,8 @@ pt-BR:
         one: Parceiro
         other: Parceiros
       supporter:
-        one: Apoiador
-        other: Apoiadores
+        one: Media Partner
+        other: Media Partners
     attributes:
       backer:
         logo: Logo

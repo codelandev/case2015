@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   get 'palestrantes', to: 'pages#speakers', as: 'speakers'
   get 'expositores', to: 'pages#exhibitors', as: 'exhibitors'
   get 'parceiros', to: 'pages#partners', as: 'partners'
-  get 'apoiadores', to: 'pages#supporters', as: 'supporters'
+  get 'mediapartener', to: 'pages#supporters', as: 'supporters'
   get 'blog', to: 'posts#index', as: 'posts'
   get 'blog/:id', to: 'posts#show', as: 'post'
   get 'evento', to: 'pages#about', as: 'about'
