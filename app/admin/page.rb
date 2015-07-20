@@ -6,7 +6,7 @@ ActiveAdmin.register Page do
   form do |f|
     inputs :page do
       input :title, collection: PageTitle.to_a, as: :select, include_blank: false
-      input :content, as: :html_editor
+      input :content, as: :ckeditor
     end
     actions
   end

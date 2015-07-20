@@ -7,7 +7,7 @@ ActiveAdmin.register Post do
       input :title
       input :published_at
       input :short_description
-      input :content, as: :html_editor
+      input :content, as: :ckeditor
       input :author
     end
     actions

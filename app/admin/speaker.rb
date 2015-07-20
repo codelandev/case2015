@@ -6,7 +6,7 @@ ActiveAdmin.register Speaker do
     inputs :speaker do
       input :name
       input :avatar
-      input :bio, as: :html_editor
+      input :bio, as: :ckeditor
       input :company
       input :website
     end
