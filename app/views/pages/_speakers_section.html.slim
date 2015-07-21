@@ -18,11 +18,14 @@
                       = link_to speaker.company, speaker.website
                     - else
                       = speaker.company
-                .modal.fade role="dialog" tabindex="-1" id="speaker-#{speaker.id}"
+                  a href="" data-toggle='modal' data-target="#speaker-#{speaker.id}"
+                    .speakers-bio == speaker.bio
+                .modal.fade role="dialog" tabindex="-1" id="speaker-#{speaker.id}" aria-labelledby="#{speaker.name}"
                   .modal-dialog.modal-sm
-                      .modal-content
-                        .modal-header
-                          button type="button" class="close" data-dismiss="modal" aria-label="Close"
-                          h4.modal-title = speaker.name
-                        .modal-body
-                          ==  speaker.bio
+                    .modal-content
+                      .modal-header
+                        button type="button" class="close" data-dismiss="modal" aria-label="Close"
+                          span aria-hidden="true" &times;
+                        h4.modal-title id="#{speaker.name}"  = speaker.name
+                      .modal-body
+                        ==  speaker.bio
