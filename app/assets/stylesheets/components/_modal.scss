@@ -8,7 +8,23 @@
 }
 
 body.modal-open {
-  padding-right: 0 !important;
+  width: 100%;
+  .modal-dialog {
+    z-index: 1500;
+  }
+  .site-wrapper {
+    z-index: auto;
+  }
+  .side-nav {
+    z-index: auto;
+    display: none;
+    a {
+      padding: 0;
+    }
+  }
+  .menu {
+    margin-right: 13px;
+  }
 }
 
 .close span {
