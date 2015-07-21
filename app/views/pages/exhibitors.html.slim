@@ -12,7 +12,7 @@
               - @exhibitors.each do |exhibitor|
                 .col-md-4.col-sm-6
                   .showcases-box
-                    .showcases-header style="background-image: asset-url#{exhibitor.logo};"
+                    .showcases-header style="background-image: url(#{exhibitor.logo});"
                     .showcases-body
                       .showcases-title = exhibitor.name
                       .showcases-description = exhibitor.description
