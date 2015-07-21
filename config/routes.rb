@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
   root 'pages#home'
   get 'aplicativo', to: 'pages#mobile_app', as: 'mobile_app'
-  get 'agenda', to: 'pages#events', as: 'events'
-  get 'patrocinadores', to: 'pages#sponsors', as: 'sponsors'
+  get 'programacao', to: 'pages#events', as: 'events'
+  get 'expositores', to: 'pages#sponsors', as: 'sponsors'
   get 'palestrantes', to: 'pages#speakers', as: 'speakers'
-  get 'expositores', to: 'pages#exhibitors', as: 'exhibitors'
+  get 'patrocinadores', to: 'pages#exhibitors', as: 'exhibitors'
   get 'parceiros', to: 'pages#partners', as: 'partners'
   get 'mediapartener', to: 'pages#supporters', as: 'supporters'
   get 'blog', to: 'posts#index', as: 'posts'

@@ -1,7 +1,7 @@
 - if @exhibitors.any?
   section.showcase
     h1.text-blue.u-uppercase.section-title
-      |  Expositores do evento
+      |  Patrocinadores do evento
     .container
       .row
         .col-md-10.col-centered
@@ -16,8 +16,6 @@
                       .showcases-description = exhibitor.description
       .row
         .showcases-action
-          a.btn.btn-line-blue[href="http://pages.rdstation.com.br/case2015
-
-" target="_blank"]
-            |  Seja um expositor
+          a.btn.btn-line-blue[href="http://pages.rdstation.com.br/case2015" target="_blank"]
+            |  Seja um patrocinador
           = link_to 'Saiba Mais', exhibitors_path, class: 'text-white btn btn-link btn-more'

@@ -2,8 +2,8 @@ pt-BR:
   activerecord:
     models:
       sponsor:
-        one: Patrocinador
-        other: Patrocinadores
+        one: Expositor
+        other: Expositores
       partner:
         one: Parceiro
         other: Parceiros

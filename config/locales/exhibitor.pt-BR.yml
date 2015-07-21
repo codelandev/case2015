@@ -2,8 +2,8 @@ pt-BR:
   activerecord:
     models:
       exhibitor:
-        one: Expositor
-        other: Expositores
+        one: Patrocinador
+        other: Patrocinadores
     attributes:
       exhibitor:
       logo: logo

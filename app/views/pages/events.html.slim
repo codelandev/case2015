@@ -9,6 +9,9 @@
         .col-md-7.col-centered
           p A Conferência Anual de Startups e Empreendedorismo (CASE) é o maior evento para startups da América Latina.
           p Organizado pela Associação Brasileira de Startups (ABStartups), o evento tem como objetivo proporcionar um ambiente com conteúdo de nível internacional para empreendedores, uma feira de negócios para startups grow-stage, com os principais fornecedores de produtos e serviços, e com networkting altamente qualificado com os melhores agentes do ecossistema brasileiro de inovação, empreendedorismo e startups.
+          p
+            | Leia mais sobre os temas do CASE 2015 na página
+            = link_to ' Blog.', posts_path
       - @event_days.each do |event_day|
         .row
           .col-md-7.col-centered
@@ -31,6 +34,4 @@
       br
       .row
         .col-md-7.col-centered
-          p
-            | Grade sujeita a alteração de acordo com disponibilidade e processo de confirmação ou obtenção de visto. Leia mais sobre os temas do CASE 2015 na página
-            = link_to ' Blog.', posts_path
+          p Grade sujeita a alteração de acordo com disponibilidade e processo de confirmação ou obtenção de visto.
