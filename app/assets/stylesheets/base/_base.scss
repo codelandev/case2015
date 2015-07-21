@@ -20,3 +20,11 @@ body {
 a {
   cursor: pointer;
 }
+
+.no-bg {
+  padding-top: 40px !important;
+
+  .section-title {
+    padding-top: 0 !important;
+  }
+}
