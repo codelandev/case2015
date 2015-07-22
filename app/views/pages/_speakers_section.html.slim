@@ -8,7 +8,7 @@
           .row.speakers
             - @speakers.each do |speaker|
               .col-md-3.col-sm-4.speakers-item
-                a href="" data-toggle='modal' data-target="#speaker-#{speaker.id}"
+                a href="" data-toggle='modal' data-target="#speaker-#{speaker.id}" title="Veja a bio completa"
                   .speakers-photo
                     .photo[style="background-image: url(#{speaker.avatar})"]
                 .speakers-description
@@ -18,7 +18,7 @@
                       = link_to speaker.company, speaker.website
                     - else
                       = speaker.company
-                  a href="" data-toggle='modal' data-target="#speaker-#{speaker.id}"
+                  a href="" data-toggle='modal' data-target="#speaker-#{speaker.id}" title="Veja a bio completa"
                     .speakers-bio == speaker.bio
                 .modal.fade role="dialog" tabindex="-1" id="speaker-#{speaker.id}" aria-labelledby="#{speaker.name}"
                   .modal-dialog.modal-sm
