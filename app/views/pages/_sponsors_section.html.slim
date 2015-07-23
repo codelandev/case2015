@@ -11,6 +11,7 @@
                 = image_tag sponsor.logo
       - if params[:action] == 'home'
         .row
+          = link_to 'Saiba Mais', sponsors_path, class: 'text-blue-medium btn btn-link btn-more'
           .showcases-action
             h4.text-blue-medium.u-uppercase
               | Quer ser expositor/patrocinador do CASE2015?

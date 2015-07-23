@@ -12,3 +12,6 @@
             li.col-md-2.u-text-center.partners-item
               = link_to supporter.website, class: 'partners-link' do
                 = image_tag supporter.logo
+      - if params[:action] == 'home'
+        .row
+          = link_to 'Saiba Mais', supporters_path, class: 'text-blue-medium btn btn-link btn-more'
