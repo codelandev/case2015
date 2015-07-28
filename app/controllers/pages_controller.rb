@@ -59,4 +59,7 @@ class PagesController < ApplicationController
   def about_en
     @page = Page.find_by(title: PageTitle::ABOUT_EN)
   end
+
+  def faq
+  end
 end

@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get 'blog/:id', to: 'posts#show', as: 'post'
   get 'evento', to: 'pages#about', as: 'about'
   get 'about', to: 'pages#about_en', as: 'about_en'
+  get 'faq', to: 'pages#faq', as: 'faq'
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   mount Ckeditor::Engine => '/ckeditor'

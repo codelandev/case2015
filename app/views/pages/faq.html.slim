@@ -1,0 +1,240 @@
+.triangle
+  = image_tag 'triangle-white.png'
+section.post
+  h1.text-blue.u-uppercase.section-title
+    |  Perguntas Frequentes
+  .container
+    .row
+      .col-md-8.col-centered
+        #accordion.panel-group aria-multiselectable="true" role="tablist"
+          .panel.panel-default
+            #heading1.panel-heading role="tab"
+              h4.panel-title
+                a aria-controls="collapse1" aria-expanded="true" data-parent="#accordion" data-toggle="collapse" href="#collapse1" role="button"
+                  | QUEM É O PÚBLICO?
+            #collapse1.panel-collapse.collapse aria-labelledby="heading1" role="tabpanel"
+              .panel-body
+                | Empreendedores de startups e interessados em empreender
+                br
+                | Investidores anjo e interessados em investir
+                br
+                | Educadores, executivos e gestores
+          .panel.panel-default
+            #heading2.panel-heading role="tab"
+              h4.panel-title
+                a aria-controls="collapse2" aria-expanded="true" data-parent="#accordion" data-toggle="collapse" href="#collapse2" role="button"
+                  | AONDE SERÁ O CASE?
+            #collapse2.panel-collapse.collapse aria-labelledby="heading2" role="tabpanel"
+              .panel-body
+                | Federação do Comércio do Estado de São Paulo (FECOMERCIO)
+          .panel.panel-default
+            #heading3.panel-heading role="tab"
+              h4.panel-title
+                a aria-controls="collapse3" aria-expanded="true" data-parent="#accordion" data-toggle="collapse" href="#collapse3" role="button"
+                  | O QUE ESTÁ INCLUSO NA MINHA INSCRIÇÃO?
+            #collapse3.panel-collapse.collapse aria-labelledby="heading3" role="tabpanel"
+              .panel-body
+                | Acesso aos 2 dias de evento;
+                br
+                | Todas as palestras listadas na programação;
+                br
+                | Coffee Break;
+                br
+                | Welcome Kit
+          .panel.panel-default
+            #heading4.panel-heading role="tab"
+              h4.panel-title
+                a aria-controls="collapse4" aria-expanded="true" data-parent="#accordion" data-toggle="collapse" href="#collapse4" role="button"
+                  | QUAL O PÚBLICO ESPERADO PARA VISITAÇÃO?
+            #collapse4.panel-collapse.collapse aria-labelledby="heading4" role="tabpanel"
+              .panel-body
+                | 4.000 pessoas
+          .panel.panel-default
+            #heading5.panel-heading role="tab"
+              h4.panel-title
+                a aria-controls="collapse5" aria-expanded="true" data-parent="#accordion" data-toggle="collapse" href="#collapse5" role="button"
+                  | AS PALESTRAS IR O ACONTECER EM HORÁRIO SIMULTÂNEO?
+            #collapse5.panel-collapse.collapse aria-labelledby="heading5" role="tabpanel"
+              .panel-body
+                | Não. Haverá apenas um auditório e todas as palestras aconteceram em sequência, para que você não perca nenhum conteúdo importante.
+          .panel.panel-default
+            #heading6.panel-heading role="tab"
+              h4.panel-title
+                a aria-controls="collapse6" aria-expanded="true" data-parent="#accordion" data-toggle="collapse" href="#collapse6" role="button"
+                  | HAVERÁ TRADUÇÃO SIMULTÂNEA?
+            #collapse6.panel-collapse.collapse aria-labelledby="heading6" role="tabpanel"
+              .panel-body
+                | Sim. Muitas palestras serão em inglês, mas com tradução simultânea. Só não esqueça de devolver o equipamento quando deixar o auditório.
+          .panel.panel-default
+            #heading7.panel-heading role="tab"
+              h4.panel-title
+                a aria-controls="collapse7" aria-expanded="true" data-parent="#accordion" data-toggle="collapse" href="#collapse7" role="button"
+                  | HAVERÁ INTERNET WIFII  E LUGARES PARA SENTAR?
+            #collapse7.panel-collapse.collapse aria-labelledby="heading7" role="tabpanel"
+              .panel-body
+                | Sim, teremos internet disponível para todos os participantes. Teremos cadeiras para inscritos nas palestras e puffs, e assentos nos lounges.
+          .panel.panel-default
+            #heading8.panel-heading role="tab"
+              h4.panel-title
+                a aria-controls="collapse8" aria-expanded="true" data-parent="#accordion" data-toggle="collapse" href="#collapse8" role="button"
+                  | TENHO UMA STARTUP - PODEREI DEMONSTRAR MEU PRODUTO NAS MESAS?
+            #collapse8.panel-collapse.collapse aria-labelledby="heading8" role="tabpanel"
+              .panel-body
+                | As mesas funcionam como agentes de mercado. Somente poderá expor sua Startup se for um produto ou serviço voltado para startups. Para reservar uma mesa previamente com a organização do evento envie email para:
+                = mail_to 'guilherme@abstartups.com.br', ' guilherme@abstartups.com.br.'
+          .panel.panel-default
+            #heading9.panel-heading role="tab"
+              h4.panel-title
+                a aria-controls="collapse9" aria-expanded="true" data-parent="#accordion" data-toggle="collapse" href="#collapse9" role="button"
+                  | QUAIS SÃO AS REGRAS PARA PARTICIPAÇÃO DE STARTUPS?
+            #collapse9.panel-collapse.collapse aria-labelledby="heading9" role="tabpanel"
+              .panel-body
+                | No mês de Agosto serão publicados os formulários de indicação de startups que se enquadram nas regras de participação dos eventos Demo Brasil e Spark Awards. Leia mais em
+                = link_to ' http://case.abstartups.com.br/evento', about_path
+          .panel.panel-default
+            #heading10.panel-heading role="tab"
+              h4.panel-title
+                a aria-controls="collapse10" aria-expanded="true" data-parent="#accordion" data-toggle="collapse" href="#collapse10" role="button"
+                  | VOCÊS EMITEM CERTIFICADO ONLINE?
+            #collapse10.panel-collapse.collapse aria-labelledby="heading10" role="tabpanel"
+              .panel-body
+                | Sim. Os participantes receberão seus certificados de participação na CASE 2015 via e-mail.
+          .panel.panel-default
+            #heading11.panel-heading role="tab"
+              h4.panel-title
+                a aria-controls="collapse11" aria-expanded="true" data-parent="#accordion" data-toggle="collapse" href="#collapse11" role="button"
+                  | VOCÊS EMITEM NOTA FISCAL?
+            #collapse11.panel-collapse.collapse aria-labelledby="heading11" role="tabpanel"
+              .panel-body
+                | Sim. Após a realização da compra do ingresso, o recibo é gerado automaticamente e enviado ao e-mail cadastrado. Caso não o receba, entre em contato no e-mail
+                = mail_to 'case@abstartups.com.br', ' case@abstartups.com.br'
+                |  e solicite a segunda via.
+          .panel.panel-default
+            #heading12.panel-heading role="tab"
+              h4.panel-title
+                a aria-controls="collapse12" aria-expanded="true" data-parent="#accordion" data-toggle="collapse" href="#collapse12" role="button"
+                  | É POSSÍVEL PARCELAR O VALOR DO INGRESSO?
+            #collapse12.panel-collapse.collapse aria-labelledby="heading12" role="tabpanel"
+              .panel-body
+                | Sim! O valor do ingresso pode ser dividido em até 10 vezes.
+          .panel.panel-default
+            #heading13.panel-heading role="tab"
+              h4.panel-title
+                a aria-controls="collapse13" aria-expanded="true" data-parent="#accordion" data-toggle="collapse" href="#collapse13" role="button"
+                  | POSSO COMPRAR MAIS DE UM INGRESSO?
+            #collapse13.panel-collapse.collapse aria-labelledby="heading13" role="tabpanel"
+              .panel-body
+                | Sim! Você pode comprar vários ingressos simultaneamente e retirar todos no credenciamento com o nome e dados do comprador.
+          .panel.panel-default
+            #heading14.panel-heading role="tab"
+              h4.panel-title
+                a aria-controls="collapse14" aria-expanded="true" data-parent="#accordion" data-toggle="collapse" href="#collapse14" role="button"
+                  | EXISTE ALGUMA TAXA EXTRA DE SERVIÇO?
+            #collapse14.panel-collapse.collapse aria-labelledby="heading14" role="tabpanel"
+              .panel-body
+                | Não. Você irá pagar apenas o valor do ingresso, sem precisar se preocupar com outras taxas.
+          .panel.panel-default
+            #heading15.panel-heading role="tab"
+              h4.panel-title
+                a aria-controls="collapse15" aria-expanded="true" data-parent="#accordion" data-toggle="collapse" href="#collapse15" role="button"
+                  | EXISTE ALGUMA CONDIÇÃO ESPECIAL PARA GRUPOS?
+            #collapse15.panel-collapse.collapse aria-labelledby="heading15" role="tabpanel"
+              .panel-body
+                | Grupos de 5 ou mais pessoas possuem condições especiais. Para saber mais, entre em contato no e-mail
+                = mail_to 'case@abstartups.com.br', ' case@abstartups.com.br'
+                |  ou pelo whatsapp (11) 99644-4142.
+          .panel.panel-default
+            #heading16.panel-heading role="tab"
+              h4.panel-title
+                a aria-controls="collapse16" aria-expanded="true" data-parent="#accordion" data-toggle="collapse" href="#collapse16" role="button"
+                  | EXISTE CONVÊNIO COM ALGUM HOTEL?
+            #collapse16.panel-collapse.collapse aria-labelledby="heading16" role="tabpanel"
+              .panel-body
+                | Sim, em parceria com a Evnts, garantimos descontos especiais na hospedagem em hotéis e hosteis. Para consultar os valores e fazer sua reserva basta acessar
+                = link_to ' http://hoteis.evnts.com.br/index.php?evento=8', 'http://hoteis.evnts.com.br/index.php?evento=8', target: '_blank'
+                | , onde podem ser encontradas várias opções, próximas ao evento, com tarifas promocionais e vantagens exclusivas para os participantes do CASE 2015.
+          .panel.panel-default
+            #heading17.panel-heading role="tab"
+              h4.panel-title
+                a aria-controls="collapse17" aria-expanded="true" data-parent="#accordion" data-toggle="collapse" href="#collapse17" role="button"
+                  | COMO FAZER UM BOLETO EM NOME DA MINHA EMPRESA?
+            #collapse17.panel-collapse.collapse aria-labelledby="heading17" role="tabpanel"
+              .panel-body
+                | Se o pagamento do seu ingresso for feito por pessoa jurídica, envie um e-mail para
+                = mail_to 'case@abstartups.com.br', ' case@abstartups.com.br'
+                |  com formulário necessário para nosso preenchimento e necessidade de documentos.
+          .panel.panel-default
+            #heading18.panel-heading role="tab"
+              h4.panel-title
+                a aria-controls="collapse18" aria-expanded="true" data-parent="#accordion" data-toggle="collapse" href="#collapse18" role="button"
+                  | COMO FUNCIONARÁ O CADASTRAMENTO NO DIA DO EVENTO?
+            #collapse18.panel-collapse.collapse aria-labelledby="heading18" role="tabpanel"
+              .panel-body
+                | Uma equipe de cadastramento estará disponível a partir das 8:00 nos dias 03 e 04 de Novembro. Mesmo a programação iniciando as 9h, tente chegar cedo para evitar filas e para não perder nenhum momento.
+          .panel.panel-default
+            #heading19.panel-heading role="tab"
+              h4.panel-title
+                a aria-controls="collapse19" aria-expanded="true" data-parent="#accordion" data-toggle="collapse" href="#collapse19" role="button"
+                  | E SE EU NÃO CONSEGUIR ME CADASTRAR ANTES DO INÍCIO DO EVENTO?
+            #collapse19.panel-collapse.collapse aria-labelledby="heading19" role="tabpanel"
+              .panel-body
+                | Será possível se cadastrar também durante o evento, inclusive no dia 04 de Novembro, caso você não tenha ido no dia anterior. Caseo já esteja cadastrado, no dia 03 de Novembro, não será necessário o recadastramento. Mas lembre-se de levar seu crachá de identificação!
+          .panel.panel-default
+            #heading20.panel-heading role="tab"
+              h4.panel-title
+                a aria-controls="collapse20" aria-expanded="true" data-parent="#accordion" data-toggle="collapse" href="#collapse20" role="button"
+                  | POSSO COMPRAR APENAS UM DOS DIAS DO EVENTO?
+            #collapse20.panel-collapse.collapse aria-labelledby="heading20" role="tabpanel"
+              .panel-body
+                | Não. Os ingressos são válidos para os dois dias de evento. Serão realizados dois eventos após a programação do CASE, Demo Brasil e Spark Award. Fique esperto: temos descontos para compra casada.
+          .panel.panel-default
+            #heading21.panel-heading role="tab"
+              h4.panel-title
+                a aria-controls="collapse21" aria-expanded="true" data-parent="#accordion" data-toggle="collapse" href="#collapse21" role="button"
+                  | EXISTIRÁ TRANSPORTE?
+            #collapse21.panel-collapse.collapse aria-labelledby="heading21" role="tabpanel"
+              .panel-body
+                | Não. O transporte é por conta do visitante.
+          .panel.panel-default
+            #heading22.panel-heading role="tab"
+              h4.panel-title
+                a aria-controls="collapse22" aria-expanded="true" data-parent="#accordion" data-toggle="collapse" href="#collapse22" role="button"
+                  | ONDE POSSO ESTACIONAR MEU CARRO?
+            #collapse22.panel-collapse.collapse aria-labelledby="heading22" role="tabpanel"
+              .panel-body
+                | A Fecomercio possui um amplo estacionamento terceirizado ao custo de R$ 20 por veículo/dia (acesso único) e R$ 40 veículo/dia (acesso livre).
+          .panel.panel-default
+            #heading23.panel-heading role="tab"
+              h4.panel-title
+                a aria-controls="collapse23" aria-expanded="true" data-parent="#accordion" data-toggle="collapse" href="#collapse23" role="button"
+                  | COMO POSSO SABER OS TEMAS QUE SERÃO ABORDADOS DURANTE A CASE 2015?
+            #collapse23.panel-collapse.collapse aria-labelledby="heading23" role="tabpanel"
+              .panel-body
+                | Estamos finalizando a agenda com os 4 temas principais do CASE 2015: Sucesso do Cliente, Pessoas e Cultura, Ecossistemas e Exit. Se você participou do CASE 2014, temos uma novidade ótima: estamos trabalhando duro para o conteúdo ser ainda melhor que a primeira edição. Assim como em 2014, os temas serão abordados em níveis de profundidade que atendem do empreendedor iniciante ao avançado.
+          .panel.panel-default
+            #heading24.panel-heading role="tab"
+              h4.panel-title
+                a aria-controls="collapse24" aria-expanded="true" data-parent="#accordion" data-toggle="collapse" href="#collapse24" role="button"
+                  | POSSO CANCELAR OU TRANSFERIR MINHA INSCRIÇÃO?
+            #collapse24.panel-collapse.collapse aria-labelledby="heading24" role="tabpanel"
+              .panel-body
+                | Sim. Cancelamentos serão aceitos até 15 dias antes da 1a data do evento (03/11). Transferência de titularidade só será aceita 15 dias antes da 1a data do evento (03/11). Entre em contato através do e-mail:
+                = mail_to 'case@abstartups.com.br', ' case@abstartups.com.br'
+          .panel.panel-default
+            #heading25.panel-heading role="tab"
+              h4.panel-title
+                a aria-controls="collapse25" aria-expanded="true" data-parent="#accordion" data-toggle="collapse" href="#collapse25" role="button"
+                  | COMO FAÇO PARA PATROCINAR O CASE 2015?
+            #collapse25.panel-collapse.collapse aria-labelledby="heading25" role="tabpanel"
+              .panel-body
+                | Para patrocinar ou Expor no CASE,  você precisa ser fornecedor de Produtos e Serviços com soluções para Startups. Para mais informações sobre as cotas de patrocínio, entre em contato pelo e-mail
+                = mail_to 'guilherme@abstartups.com.br', ' guilherme@abstartups.com.br'
+          .panel.panel-default
+            #heading26.panel-heading role="tab"
+              h4.panel-title
+                a aria-controls="collapse26" aria-expanded="true" data-parent="#accordion" data-toggle="collapse" href="#collapse26" role="button"
+                  | INCIDE ALGUM IMPOSTO NA MINHA COMPRA? QUAL?
+            #collapse26.panel-collapse.collapse aria-labelledby="heading26" role="tabpanel"
+              .panel-body
+                | No valor do ingresso, estão incluídos os seguintes impostos: ISSQN, que corresponde a 5% do total, e Pis/Cofins, que corresponde a 3,65%.
+
