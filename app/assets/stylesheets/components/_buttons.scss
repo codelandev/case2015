@@ -28,6 +28,16 @@
     background: $brand-yellow;
     color: $brand-blue-medium;
   }
+
+  &.btn-inverse {
+    background-color: $brand-yellow;
+    color: $brand-blue-medium;
+    &:hover {
+      background-color: $brand-blue-medium;
+      border-color: $brand-blue-medium;
+      color: $brand-yellow;
+    }
+  }
 }
 
 .btn-line-blue {
