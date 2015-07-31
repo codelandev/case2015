@@ -10,12 +10,20 @@ section.intro
                   h1
                     = link_to root_path do
                       = image_tag "logo-header.png", alt: "CASE2015", class: 'intro-logo'
-                  p = image_tag "date-header.png", alt: "3 a 4 de novembro. Aqui o empreendedor é rei.", class: 'intro-date img-responsive'
+                  - if params[:action] == 'about_en'
+                    p = image_tag "date-header-en.png", alt: "November 3rd & 4th. Where Entrepreneurs are Kings.", class: 'intro-date img-responsive'
+                  - else
+                    p = image_tag "date-header.png", alt: "3 a 4 de novembro. Aqui o empreendedor é rei.", class: 'intro-date img-responsive'
 
                 .col-md-4.col-md-offset-4.col-sm-6.col-xs-12
-                  h4 O maior evento de Startups e Empreendedorismo da America Latina: conteúdo indispensável, networking qualificado e os melhores serviços para startups.
+                  - if params[:action] == 'about_en'
+                    h4 The biggest Entrepreneurship & Startup event in Latin America: Great Content, Qualified Networking and the best services for startups
+                  - else
+                    h4 O maior evento de Startups e Empreendedorismo da America Latina: conteúdo indispensável, networking qualificado e os melhores serviços para startups.
               .row
                 .col-md-7.col-xs-12.col-centered
                   .intro-actions
-                    = link_to 'Garanta seu ingresso', 'https://www.sympla.com.br/case-2015__26296?utm_source=Garantaseuingresso&utm_medium=botao_call_site&utm_campaign=Site_CASE2015', class: 'btn btn-line-yellow btn-subscribe btn-inverse', title: 'Garanta seu ingresso', target: '_blank'
-                    / = link_to 'Saiba mais', about_path, class: 'btn btn-more btn-link'
+                    - if params[:action] == 'about_en'
+                      = link_to 'Guarantee your Ticket', 'https://www.sympla.com.br/case-2015__26296?utm_source=Garantaseuingresso&utm_medium=botao_call_site&utm_campaign=Site_CASE2015', class: 'btn btn-line-yellow btn-subscribe btn-inverse', title: 'Guarantee your Ticket', target: '_blank'
+                    - else
+                      = link_to 'Garanta seu ingresso', 'https://www.sympla.com.br/case-2015__26296?utm_source=Garantaseuingresso&utm_medium=botao_call_site&utm_campaign=Site_CASE2015', class: 'btn btn-line-yellow btn-subscribe btn-inverse', title: 'Garanta seu ingresso', target: '_blank'
