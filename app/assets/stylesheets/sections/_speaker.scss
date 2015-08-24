@@ -5,7 +5,7 @@
   background-repeat: no-repeat;
   position: relative;
   width: 100%;
-  padding: 80px 0 90px;
+  padding: 80px 0 110px;
   &.no-bg {
     background-image: none;
     background-color: #fff;
@@ -40,8 +40,8 @@
 }
 
 .speakers-photo {
-  width: 120px;
-  height: 120px;
+  width: 160px;
+  height: 160px;
   transform: rotate(45deg);
   overflow: hidden;
   background: orange;
@@ -49,9 +49,9 @@
 
   .photo {
     background-size: cover;
-    width: 170px;
-    height: 170px;
-    margin: -25px;
+    width: 230px;
+    height: 230px;
+    margin: -33px;
     transform: rotate(-45deg);
   }
 }
