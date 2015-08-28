@@ -23,28 +23,45 @@ html
       = yield
       = render 'partials/footer'
 
-  javascript:
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-62319450-1', 'auto');
-    ga('send', 'pageview');
-
-    function callFnParent (evt) {
-      var acao = evt.data.split(':')[0];
-      if(acao == "redim"){
-        var iFrame = document.getElementById("evnts");
-        iFrame.style.height = "" + evt.data.split(':')[1];
+    javascript:
+      (function() {
+      var _fbq = window._fbq || (window._fbq = []);
+      if (!_fbq.loaded) {
+      var fbds = document.createElement('script');
+      fbds.async = true;
+      fbds.src = '//connect.facebook.net/en_US/fbds.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(fbds, s);
+      _fbq.loaded = true;
       }
-      if(acao == "mover"){
-        window.scrollTo(0, document.body.scrollHeight - 500);
-      }
-      if(acao == "deslocar"){
-        var altura = "" + evt.data.split(':')[1];
-        window.scrollTo(0, altura);
-      }
+      })();
+      window._fbq = window._fbq || [];
+      window._fbq.push(['track', '6029393850903', {'value':'0.01','currency':'BRL'}]);
 
-    }
-    window.addEventListener("message", callFnParent, false);
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-62319450-1', 'auto');
+      ga('send', 'pageview');
+
+      function callFnParent (evt) {
+        var acao = evt.data.split(':')[0];
+        if(acao == "redim"){
+          var iFrame = document.getElementById("evnts");
+          iFrame.style.height = "" + evt.data.split(':')[1];
+        }
+        if(acao == "mover"){
+          window.scrollTo(0, document.body.scrollHeight - 500);
+        }
+        if(acao == "deslocar"){
+          var altura = "" + evt.data.split(':')[1];
+          window.scrollTo(0, altura);
+        }
+
+      }
+      window.addEventListener("message", callFnParent, false);
+
+    noscript
+      img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6029393850903&amp;cd[value]=0.01&amp;cd[currency]=BRL&amp;noscript=1"
