@@ -7,7 +7,7 @@
         ul.partners
           - @sponsors.each do |sponsor|
             li.col-md-2.u-text-center.partners-item
-              = link_to sponsor.website, class: 'partners-link' do
+              = link_to sponsor.website, class: 'partners-link', target: '_blank' do
                 = image_tag sponsor.logo
       - if params[:action] == 'home'
         .row

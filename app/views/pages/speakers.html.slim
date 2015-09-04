@@ -17,7 +17,7 @@
                   h2.text-blue = speaker.name
                   .speakers-information
                     - if speaker.website.present?
-                      = link_to speaker.company, speaker.website
+                      = link_to speaker.company, speaker.website, target: '_blank'
                     - else
                       = speaker.company
                 a href="" data-toggle='modal' data-target="#speaker-#{speaker.id}" title="Veja a bio completa"
